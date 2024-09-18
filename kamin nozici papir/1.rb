@@ -5,7 +5,7 @@
 def winner_is(player_choice, pc_choice)
   if player_choice == pc_choice
     puts "Нічия :/\n\n"
-  elsif player_choice == 2 && pc_choice == 1 || player_choice == 3 && pc_choice == 2 || player_choice == 1 && pc_choice == 3
+  elsif player_choice > pc_choice || player_choice == 1 && pc_choice == 3
     puts "Ви програли :(\n\n"
   else
     puts "Перемога! :)\n\n"
