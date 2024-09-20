@@ -7,7 +7,7 @@ def main_func(input)
       double_trouble = i.split("")
       for j in double_trouble
         j !~ /\d/
-        + end
+      end
       puts "Помилка! Подвійний символ"
       return
     elsif i =~ /\w/
