@@ -6,10 +6,12 @@ def main_func(input)
     if i.length != 1
       double_trouble = i.split("")
       for j in double_trouble
-        j !~ /\d/
+        if j !~ /\d/
+          puts "Помилка! Подвійний символ"
+          return
+        end
       end
-      puts "Помилка! Подвійний символ"
-      return
+      output_array.push(i)
     elsif i =~ /\w/
       output_array.push(i)
     elsif i == "*" || i == "/"
