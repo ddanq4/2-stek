@@ -6,6 +6,10 @@ def main_func(input)
     if i.length != 1
       double_trouble = i.split("")
       for j in double_trouble
+        if j !~ /\d/ && j != "-"
+          puts "Помилка! Подвійний символ"
+          return
+        end
         if j !~ /\d/
           puts "Помилка! Подвійний символ"
           return
@@ -15,7 +19,10 @@ def main_func(input)
     elsif i =~ /\w/
       output_array.push(i)
     elsif i == "*" || i == "/"
-      if !symbol_array.empty? && (symbol_array.last == "*" || symbol_array.last == "/")
+      if i == "/" && input_array[input_array.index(i) + 1] == "0"
+        puts "Помилка! Ділити на нуль неможна"
+        return
+        elsif !symbol_array.empty? && (symbol_array.last == "*" || symbol_array.last == "/")
         output_array.push(symbol_array.pop)
       end
       symbol_array.push(i)
