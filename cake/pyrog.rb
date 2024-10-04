@@ -40,7 +40,7 @@ def input_check(cake)
       end
     end
   end
-  if rodzynki.size <= 1 && rodzynki.size > 10
+  if rodzynki.size <= 1 || rodzynki.size > 10
     puts "Кількість родзинок не відповідає вимогам!"
     exit!
   end
@@ -80,7 +80,7 @@ def find_left(top, down, right, left, output_cake, x, y, rodzynki)
     puts "Проверяем элемент на позиции [#{x}, #{left}]"
     if left == y
       next
-    elsif output_cake[x][left] == "/" && (((right + 1) - left) * ((down+1) - top)) == ((cake.size * cake[0].size) / rodzynki.size)
+    elsif output_cake[x][left] == "/" && (((right + 1) - left) * ((down+1) - top)) == ((output_cake * output_cake[0].size) / rodzynki.size)
       puts "Прошел проверку"
       output_cake[x][left] = "."
       else
@@ -125,7 +125,7 @@ def find_top(top, down, right, left, output_cake, x, y, rodzynki)
     end
     if temp == true
         for j in left..right
-          if (((right + 1) - left) * ((down+1) - top)) == ((cake.size * cake[0].size) / rodzynki.size)
+          if (((right + 1) - left) * ((down+1) - top)) == ((output_cake.size * output_cake[0].size) / rodzynki.size)
             puts "Прошел проверку"
             output_cake[top][j] = "."
           else
@@ -153,7 +153,7 @@ def find_down(top, down, right, left, output_cake, x, y, rodzynki)
     end
     if temp == true
       for j in left..right
-        if (((right + 1) - left) * ((down+1) - top)) == ((cake.size * cake[0].size) / rodzynki.size)
+        if (((right + 1) - left) * ((down+1) - top)) == ((output_cake.size * output_cake[0].size) / rodzynki.size)
           puts "Прошел проверку"
           output_cake[down][j] = "."
         else
@@ -165,7 +165,7 @@ def find_down(top, down, right, left, output_cake, x, y, rodzynki)
     puts output_cake.inspect
 
     cake_piece = []
-    if (((right + 1) - left) * ((down+1) - top)) == ((cake.size * cake[0].size) / rodzynki.size)
+    if (((right + 1) - left) * ((down+1) - top)) == ((output_cake.size * output_cake[0].size) / rodzynki.size)
       puts "Условие выполняется: создаем cake_piece"
       for x in 0..(down - top)
         row = []

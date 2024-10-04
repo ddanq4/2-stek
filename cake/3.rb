@@ -1,174 +1,142 @@
 def cake_split(input)
   cake = []
-
   rows = input.split("\n")
-  for i in 0...rows.size              # .. для [], ... для [)
+  for i in 0...rows.size            # .. для [], ... для [)
     cols = rows[i].split("")
     cake.push(cols)
   end
-  puts("CAKE")
-                       puts cake.inspect
-  rodzynki = input_check(cake)
-  output_cake = cake
+
+  rodzinki = []
   for x in 0...cake.size
-    for y in 0...cake[x].size
+    for y in 0...cake[0].size
       if cake[x][y] == "o"
-        output_cake[x][y] = "o"
-      else
-        output_cake[x][y] = "/"
+        rodzinki.push([x, y])
       end
     end
   end
-  puts("OUTPUTCAKE")
-                         puts output_cake.inspect
-
-  output = piece_find(cake, rodzynki, output_cake)
-  puts("OUTPUT")
-  puts output.inspect
-end
-def input_check(cake)
-  rodzynki = []
-  #координати родзинок і кількість + проверка
-   for x in 0...cake.size
-    for y in 0...cake[x].size
-                     puts "Перевіряємо символ: #{cake[x][y]} на позиції [#{x}, #{y}]"
-      if cake[x][y] != "o" && cake[x][y] != "."
-        puts("Помилка! Невірний символ: #{cake[x][y]} на позиції [#{x}, #{y}]")
-        exit!
-      elsif cake[x][y] == "o"
-        rodzynki.push([x, y])
-     end
-    end
-   end
-  if rodzynki.size <= 1 && rodzynki.size > 10
-    puts "Кількість родзинок не відповідає вимогам!"
-    exit!
+  if rodzinki.size <= 1 || rodzinki.size > 10
+    puts "Не вірна кількість родзинок!"
+    return
   end
-                 puts "Кількість родзинок: #{rodzynki.size}"
-                 puts "Координати родзинок: #{rodzynki.inspect}"
-                 puts "Площа пирога (рядки * стовпчики): #{cake.size} * #{cake[0].size} = #{cake.size * cake[0].size}"
-  if cake.size * cake[0].size % rodzynki.size != 0
-    puts("Помилка! Цей пиріг неможна поділити рівно :(")
-    exit!
-  else
+
+  total_size = cake.size * cake[0].size
+  if total_size % rodzinki.size != 0
+    puts "Помилка! Цей пиріг не ділиться на рівні частини"
+    return
   end
-  rodzynki
-end
 
-def piece_find(cake, rodzynki, output_cake)
-  output = []
-  cake_piece = []
-  for i in 0...rodzynki.size
-    puts "Перевіряємо родзинку #{i+1}"
-    x, y = rodzynki[i]
-    left = y
-    right = y
-    top = x
-    down = x
-    for down in (x)...(cake.size)
-      for top in (x).downto(0)
-        for right in (y)...(cake[0].size)
-          for left in (y).downto(0)
-            puts "Проверяем элемент на позиции [#{x}, #{left}]"
-            if left == y
-              next
-            elsif output_cake[x][right] == "o"
-              puts "Встретили изюминку на позиции [#{x}, #{right}], прекращаем расширение вправо"
-              break
-            elsif output_cake[x][left] == "/" && (((right + 1) - left) * ((down+1) - top)) == ((cake.size * cake[0].size) / rodzynki.size)
-              puts "Прошел проверку"
-                output_cake[x][left] = "."
-            end
-            puts("left")
-            puts output_cake.inspect
-          end
-          puts "Проверяем элемент на позиции [#{x}, #{right}]"
-          if right == y
-            next
-          elsif output_cake[x][right] == "o"
-            puts "Встретили изюминку на позиции [#{x}, #{right}], прекращаем расширение вправо"
-            break
-          elsif output_cake[x][right] == "/" && ((right - left) * (down - top)) <= ((cake.size * cake[0].size) / rodzynki.size)
-            puts "Прошел проверку"
-              output_cake[x][right] = "."
-          end
-          puts("right")
-          puts output_cake.inspect
-        end
-        puts "Проверяем ряд на позиции [#{top}]"
-        for a in 0...(output_cake[top].flatten.size)
-          if output_cake[a] == "o"
-            puts "Встретили изюминку на позиции [#{x}, #{right}], прекращаем расширение вправо"
-            break
-          elsif output_cake.flatten[a] == "/"
-            puts "в ряде нет изюма и его территории"
-            for j in left..right
-              if (((right + 1) - left) * ((down+1) - top)) == ((cake.size * cake[0].size) / rodzynki.size)
-                puts "Прошел проверку"
-                  output_cake[top][j] = "."
-              end
-            end
-          end
-        end
-        puts("top")
-        puts output_cake.inspect
-      end
-      puts "Проверяем ряд на позиции [#{down}]"
-      for a in 0...(output_cake[down].flatten.size)
-        if output_cake[a] == "o"
-          puts "Встретили изюминку на позиции [#{x}, #{right}], прекращаем расширение вправо"
-          break
-        elsif output_cake.flatten[a] == "/"
-          puts "в ряде нет изюма и его территории"
-          for j in left..right
-            if (((right + 1) - left) * ((down + 1) - top)) == ((cake.size * cake[0].size) / rodzynki.size)
-              puts "Прошел проверку"
-                output_cake[down][j] = "."
-            end
-          end
-        end
-      end
-      puts("down")
-      puts output_cake.inspect
-
-
-      if (((right + 1) - left) * ((down+1) - top)) == ((cake.size * cake[0].size) / rodzynki.size)
-        puts "Условие выполняется: создаем cake_piece"
-        for x in 0..(down - top)
-          row = []
-          for y in 0..(right - left)
-            row.push(".")
-          end
-          cake_piece.push(row)
-        end
-        cake_piece[x - top][y - left] = "o"
-        puts("cake_piece")
-        puts cake_piece.inspect
-        break
-      end
+  piece_size = total_size / rodzinki.size
+  zanyato = []
+  for i in 0...cake.size
+    row = []
+    for j in 0...cake[0].size
+      row.push(false)
     end
+    zanyato.push(row)
+  end
 
-    if !cake_piece.empty?
-      output.push(cake_piece)
+  pieces = []
+  for i in 0...rodzinki.size
+    x = rodzinki[i][0]
+    y = rodzinki[i][1]
+    piece = found_piece(x, y, cake, piece_size, zanyato)
+    if piece
+      pieces.push(piece)
     else
-      puts("\nПомилка! Цей пиріг не ділиться націло\n")
-      exit!
+      puts "Помилка! Цей пиріг не  можна поділити націло по одній родзинці"
+      return
     end
   end
-  output
+  puts "Шматки:"
+  for i in 0...pieces.size
+    print_piece(pieces[i])
+  end
+end
+def found_piece(x, y, cake, piece_size, zanyato)
+  for height in 1..cake.size
+    for width in 1..cake[0].size
+      if width * height != piece_size
+        next
+      end
+      for start_x in 0..(cake.size - height)
+        if x < start_x || x >= start_x + height
+          next
+        end
+        for start_y in 0..(cake[0].size - width)
+          if y < start_y || y >= start_y + width
+            next
+          end
+                                                                #puts "Проверяется кусок размером #{width}x#{height} с началом в (#{start_x}, #{start_y})" if width == 6 && height == 2
+          if good_piece(start_x, start_y, width, height, cake, zanyato)
+            add_zanyato(start_x, start_y, width, height, zanyato)
+            return create_piece(start_x, start_y, width, height, cake)
+          end
+        end
+        for start_x in 0..(cake.size - width)
+          for start_y in 0..(cake[0].size - height)
+            if good_piece(start_x, start_y, height, width, cake, zanyato)
+              add_zanyato(start_x, start_y, height, width, zanyato)
+              return create_piece(start_x, start_y, height, width, cake)
+            end
+          end
+        end
+      end
+    end
+  end
+  return nil
 end
 
-  puts("Введіть пирог+END або exitEND")
-  $/ = "END"
-  input = STDIN.gets
-  $/ = "\n"
-  input.chomp!("END")
-  input.strip!        #удалить лишнее
-  puts("\n\n")
-  puts(input)
-  puts("\n\n")
-  if input == "exit"
-    exit
-  else
-    cake_split(input)
+def good_piece(start_x, start_y, width, height, cake, zanyato)
+  count_rodzinki = 0
+  for i in start_x...(start_x + height)
+    for j in start_y...(start_y + width)
+      if zanyato[i][j]
+        return false
+      end
+      if cake[i][j] == "o"
+        count_rodzinki += 1
+      end
+    end
   end
+  return count_rodzinki == 1
+end
+
+def add_zanyato(start_x, start_y, width, height, zanyato)
+  for i in start_x...(start_x + height)
+    for j in start_y...(start_y + width)
+                                                           #puts "Помечаем занятую клетку на (#{i}, #{j})"
+      zanyato[i][j] = true
+    end
+  end
+end
+
+def create_piece(start_x, start_y, width, height, cake)
+  piece = []
+  for i in start_x...(start_x + height)
+    row = []
+    for j in start_y...(start_y + width)
+      row.push(cake[i][j])
+    end
+    piece.push(row)
+  end
+  return piece
+end
+
+def print_piece(piece)
+  for i in 0...piece.size
+    puts piece[i].join("")
+  end
+  puts ",\n"
+end
+puts("Введіть без пробілів пирог+END або exitEND")
+$/ = "END"
+input = STDIN.gets
+$/ = "\n"
+input.chomp!("END")
+                                              #puts(input.inspect)
+input.strip!
+if input.strip == "exit"
+  exit
+else
+  cake_split(input)
+end
