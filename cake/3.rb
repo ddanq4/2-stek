@@ -128,15 +128,23 @@ def print_piece(piece)
   end
   puts ",\n"
 end
-puts("Введіть без пробілів пирог+END або exitEND")
-$/ = "END"
-input = STDIN.gets
-$/ = "\n"
-input.chomp!("END")
-                                              #puts(input.inspect)
-input.strip!
-if input.strip == "exit"
-  exit
-else
-  cake_split(input)
+
+def main
+  puts("Введіть без пробілів пирог+END або exitEND")
+  $/ = "END"
+  input = STDIN.gets
+  $/ = "\n"
+  input.chomp!("END")
+                                              puts(input.inspect)
+  input.strip!
+  if input.strip == "exit"
+    exit
+  else
+    cake_split(input)
+  end
+end
+
+
+if __FILE__ == $0
+  main
 end
