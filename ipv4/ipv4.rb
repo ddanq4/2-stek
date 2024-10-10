@@ -8,17 +8,22 @@ def check(input)
       return false
     elsif i.to_i < 0 || i.to_i > 255
       return false
-    else
-      return true
     end
   end
+  return true
 end
 
-loop do
+def main
+ loop do
   input = gets.chomp
-  if check(input) == true
+  if check(input)
     puts("true")
   else
     puts("false")
   end
+ end
+end
+
+if __FILE__ == $0
+  main
 end
