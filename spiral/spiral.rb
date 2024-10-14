@@ -66,8 +66,6 @@ def spiral(n)
     end
     step = step + 1
   end
-
-  # Выводим матрицу
   for row in spiral
     puts row.join(" ")
   end
