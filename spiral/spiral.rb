@@ -1,71 +1,78 @@
 def spiral(n)
-  area = n.to_i * n.to_i
-  spiral = Array.new(n.to_i) { Array.new(n.to_i, 0) }
-
-  if n.to_i % 2 != 0
-    y = (n.to_i-1)/2
-    x = (n.to_i-1)/2
+  n = n.to_i
+  area = n*n
+  spiral = Array.new(n) { Array.new(n, 0) }
+  if n % 2 != 0
+    x = n/2
+    y = n/2
   else
-    y = (n.to_i/2)
-    x = (n.to_i/2)-1
+    x = n/2-1
+    y = n/2-1
   end
-  i = 1
+
   spiral[y][x] = 1
-  x_max = x
-  x_min = x
-  y_max = y
-  y_min = y
-  a = x
-  b = y
-  puts(spiral.inspect)
+  i = 2
+  step = 1
   while i <= area
-    # top
-    for b in y_max.downto(y_min)
-      spiral[a][b] = i
-      i = i+1
-      puts("top")
-      puts(spiral.inspect)
-      puts(i)
+                                   #right
+    for k in 1..step
+      x = x+1
+      if x >= n
+        x = n-1
+        break
+      end
+      if spiral[y][x] == 0
+        spiral[y][x] = i
+        i = i+1
+      end
     end
-    if y_min != -1
-      y_min = y_min - 1
+                                       #down
+    for k in 1..step
+      y = y+1
+      if y >= n
+        y = n-1
+        break
+      end
+      if spiral[y][x] == 0
+        spiral[y][x] = i
+        i = i+1
+      end
     end
-    # right
-    for a in x_min..x_max
-      spiral[a][b] = i
-      i = i+1
-      puts("right")
-      puts(spiral.inspect)
-      puts(i)
+    step = step + 1
+                                         #left
+    for k in 1..step
+      x = x-1
+      if x < 0
+        x = 0
+        break
+      end
+      if spiral[y][x] == 0
+        spiral[y][x] = i
+        i = i+1
+      end
     end
-    if x_max != n.to_i - 1
-      x_max = x_max + 1
+
+                                   #up
+    for k in 1..step
+      y = y-1
+      if y < 0
+        y = 0
+        break
+      end
+      if spiral[y][x] == 0
+        spiral[y][x] = i
+        i = i+1
+      end
     end
-    #down
-    for b in y_min..y_max
-      spiral[a][b] = i
-      i = i+1
-      puts("down")
-      puts(spiral.inspect)
-      puts(i)
-    end
-    if y_max != n.to_i - 1
-      y_max = y_max + 1
-    end
-    #left
-    for a in x_max.downto(x_min)
-      spiral[a][b] = i
-      i = i+1
-      puts("left")
-      puts(spiral.inspect)
-      puts(i)
-    end
-    if x_min != -1
-      x_min = x_min - 1
-    end
+    step = step + 1
   end
-  puts(spiral.inspect)
+
+  # Выводим матрицу
+  for row in spiral
+    puts row.join(" ")
+  end
 end
+
 def main
   loop do
     puts("Введіть розмір спиральної матриці or exit")
@@ -79,6 +86,7 @@ def main
     end
   end
 end
+
 if __FILE__ == $0
   main
 end
