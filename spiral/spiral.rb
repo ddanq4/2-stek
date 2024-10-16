@@ -1,4 +1,9 @@
 def spiral(n)
+  if n == "exit"
+    return "ex"
+  elsif n !~ /^\d+$/ || n.to_i <= 0
+    return "err"
+  end
   n = n.to_i
   area = n*n
   spiral = Array.new(n) { Array.new(n, 0) }
@@ -66,21 +71,24 @@ def spiral(n)
     end
     step = step + 1
   end
-  for row in spiral
-    puts row.join(" ")
-  end
+  return spiral
 end
 
 def main
   loop do
-    puts("Введіть розмір спиральної матриці or exit")
+    puts("Введіть розмір спіральної матриці or exit")
     n = gets.chomp
-    if n == "exit"
+    sp = spiral(n)
+    
+    case sp
+    when "ex"
       break
-    elsif n !~ /^\d+$/ || n.to_i <= 0
-      puts("Помилка! Будь ласка, введіть число більше нуля")
+    when "err"
+      puts("Помилка! Будь ласка, введіть ціле число більше нуля")
     else
-      spiral(n)
+      for row in spiral(n)
+        puts row.join(" ")
+      end
     end
   end
 end
