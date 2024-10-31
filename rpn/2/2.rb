@@ -6,13 +6,9 @@ def main_func(input)
     if i.length != 1
       double_trouble = i.split("")
       for j in double_trouble
-        if j !~ /\d/ && j != "-"
+        if j !~ /\d/ && j != "-" && j != "."
           puts "Помилка! Подвійний символ"
-          return
-        end
-        if j !~ /\d/
-          puts "Помилка! Подвійний символ"
-          return
+          return "Помилка! Подвійний символ"
         end
       end
       output_array.push(i)
@@ -21,7 +17,7 @@ def main_func(input)
     elsif i == "*" || i == "/"
       if i == "/" && input_array[input_array.index(i) + 1] == "0"
         puts "Помилка! Ділити на нуль неможна"
-        return
+        return "Помилка! Ділити на нуль неможна"
         elsif !symbol_array.empty? && (symbol_array.last == "*" || symbol_array.last == "/")
         output_array.push(symbol_array.pop)
       end
@@ -39,9 +35,11 @@ def main_func(input)
   while !symbol_array.empty?
     output_array.push(symbol_array.pop)
   end
+  return output_array.join(" ")
   puts output_array.join(" ")
 end
 
+def main
 loop do
   puts "Введіть вираз з пробілами або exit для виходу"
   input = gets.chomp
@@ -50,4 +48,9 @@ loop do
   else
     main_func(input)
   end
+  end
+end
+
+if __FILE__ == $0
+  main
 end
