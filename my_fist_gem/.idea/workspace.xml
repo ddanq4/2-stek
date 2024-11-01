@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ba92ed6-93a6-4ddb-85a4-e9bc7dcd0dc4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/charscounter/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/charscounter/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/charscounter/Gemfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/charscounter/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/charscounter/Rakefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/charscounter/bin/console" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/charscounter/bin/setup" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/charscounter/charscounter.gemspec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/charscounter/lib/charscounter.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/charscounter/lib/charscounter/version.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/charscounter/sig/charscounter.rbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/charscounter/spec/test.rb" afterDir="false" />
-    </list>
+    <list default="true" id="4ba92ed6-93a6-4ddb-85a4-e9bc7dcd0dc4" name="Changes" comment="fg" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +13,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/charscounter" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ddanq4"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ddanq4/2-stek.git",
+    "accountId": "0cf21da1-fa18-4a96-b9eb-1194cdfb2b89"
+  }
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -41,6 +40,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Ruby.charscounter.executor": "Run",
+    "Ruby.spec_helper.executor": "Run",
     "Ruby.test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -79,14 +79,31 @@
       <workItem from="1730487013788" duration="1327000" />
       <workItem from="1730496169502" duration="1058000" />
       <workItem from="1730497427550" duration="1519000" />
-      <workItem from="1730498959643" duration="1227000" />
+      <workItem from="1730498959643" duration="1552000" />
     </task>
+    <task id="LOCAL-00001" summary="fg">
+      <option name="closed" value="true" />
+      <created>1730500388570</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730500388570</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.cmd" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fg" />
+    <option name="LAST_COMMIT_MESSAGE" value="fg" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/my_fist_gem@spec_helper.rcov" NAME="spec_helper Coverage Results" MODIFIED="1730500334460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="symbolanalyz" />
     <SUITE FILE_PATH="coverage/symbolanalyz@charscounter.rcov" NAME="charscounter Coverage Results" MODIFIED="1730497153497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="symbolanalyz" />
     <SUITE FILE_PATH="coverage/my_fist_gem@charscounter.rcov" NAME="charscounter Coverage Results" MODIFIED="1730497443708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="symbolanalyz" />
     <SUITE FILE_PATH="coverage/my_fist_gem@test.rcov" NAME="test Coverage Results" MODIFIED="1730499770815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="symbolanalyz" />
