@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4ba92ed6-93a6-4ddb-85a4-e9bc7dcd0dc4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/charscounter/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charscounter/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charscounter/Gemfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charscounter/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charscounter/Rakefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charscounter/bin/console" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charscounter/bin/setup" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charscounter/charscounter.gemspec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charscounter/lib/charscounter.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charscounter/lib/charscounter/version.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charscounter/sig/charscounter.rbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charscounter/spec/test.rb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/charscounter" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2oGDR5Kh0wjdcy8T5wLegqZYZLv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Ruby.charscounter.executor": "Run",
+    "Ruby.test.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "E:/Uknord5he/BH3/stek/2-stek/my_fist_gem",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ruby.structure.view.model.defaults.configured": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Uknord5he\BH3\stek\2-stek\my_fist_gem\charscounter\spec" />
+      <recent name="E:\Uknord5he\BH3\stek\2-stek\my_fist_gem\charscounter" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-RM-242.21829.150" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4ba92ed6-93a6-4ddb-85a4-e9bc7dcd0dc4" name="Changes" comment="" />
+      <created>1730487011707</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730487011707</updated>
+      <workItem from="1730487013788" duration="1327000" />
+      <workItem from="1730496169502" duration="1058000" />
+      <workItem from="1730497427550" duration="1519000" />
+      <workItem from="1730498959643" duration="1227000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/symbolanalyz@charscounter.rcov" NAME="charscounter Coverage Results" MODIFIED="1730497153497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="symbolanalyz" />
+    <SUITE FILE_PATH="coverage/my_fist_gem@charscounter.rcov" NAME="charscounter Coverage Results" MODIFIED="1730497443708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="symbolanalyz" />
+    <SUITE FILE_PATH="coverage/my_fist_gem@test.rcov" NAME="test Coverage Results" MODIFIED="1730499770815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="symbolanalyz" />
+  </component>
+</project>
