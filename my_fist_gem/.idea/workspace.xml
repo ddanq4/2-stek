@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ba92ed6-93a6-4ddb-85a4-e9bc7dcd0dc4" name="Changes" comment="fg" />
+    <list default="true" id="4ba92ed6-93a6-4ddb-85a4-e9bc7dcd0dc4" name="Changes" comment="fg">
+      <change beforePath="$PROJECT_DIR$/charscounter/spec/test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/charscounter/spec/test.rb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +45,7 @@
     "Ruby.spec_helper.executor": "Run",
     "Ruby.test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "<unknown>",
     "last_opened_file_path": "E:/Uknord5he/BH3/stek/2-stek/my_fist_gem",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -79,7 +81,7 @@
       <workItem from="1730487013788" duration="1327000" />
       <workItem from="1730496169502" duration="1058000" />
       <workItem from="1730497427550" duration="1519000" />
-      <workItem from="1730498959643" duration="1552000" />
+      <workItem from="1730498959643" duration="2387000" />
     </task>
     <task id="LOCAL-00001" summary="fg">
       <option name="closed" value="true" />
@@ -97,6 +99,42 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.cmd" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="780d63d9-7023-48f4-91ca-116bad085ad5" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="780d63d9-7023-48f4-91ca-116bad085ad5">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:E:/Uknord5he/BH3/stek/2-stek/my_fist_gem" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fg" />
