@@ -55,6 +55,7 @@ def main
       if numbers.size == 0
         puts("error (0 symbols cant be accepted)")
       end
+      puts numbers.inspect
       stats = Statistics.new(numbers)
       puts "Average: #{stats.average}"
       puts "Median: #{stats.median}"
