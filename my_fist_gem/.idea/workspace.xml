@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ba92ed6-93a6-4ddb-85a4-e9bc7dcd0dc4" name="Changes" comment="fg">
-      <change beforePath="$PROJECT_DIR$/charscounter/spec/test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/charscounter/spec/test.rb" afterDir="false" />
+    <list default="true" id="4ba92ed6-93a6-4ddb-85a4-e9bc7dcd0dc4" name="Changes" comment="fgg">
+      <change beforePath="$PROJECT_DIR$/../api/.idea/api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../api/.idea/api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api/info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../api/info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pattern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pattern/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,20 +16,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/charscounter" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ddanq4"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ddanq4&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ddanq4/2-stek.git",
-    "accountId": "0cf21da1-fa18-4a96-b9eb-1194cdfb2b89"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ddanq4/2-stek.git&quot;,
+    &quot;accountId&quot;: &quot;0cf21da1-fa18-4a96-b9eb-1194cdfb2b89&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -39,23 +42,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Ruby.charscounter.executor": "Run",
-    "Ruby.spec_helper.executor": "Run",
-    "Ruby.test.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "<unknown>",
-    "last_opened_file_path": "E:/Uknord5he/BH3/stek/2-stek/my_fist_gem",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ruby.structure.view.model.defaults.configured": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Ruby.charscounter.executor&quot;: &quot;Run&quot;,
+    &quot;Ruby.spec_helper.executor&quot;: &quot;Run&quot;,
+    &quot;Ruby.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Uknord5he/BH3/stek/2-stek/my_fist_gem&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Uknord5he\BH3\stek\2-stek\my_fist_gem\charscounter\spec" />
@@ -81,7 +84,9 @@
       <workItem from="1730487013788" duration="1327000" />
       <workItem from="1730496169502" duration="1058000" />
       <workItem from="1730497427550" duration="1519000" />
-      <workItem from="1730498959643" duration="2490000" />
+      <workItem from="1730498959643" duration="2802000" />
+      <workItem from="1730501986847" duration="33000" />
+      <workItem from="1730545835695" duration="853000" />
     </task>
     <task id="LOCAL-00001" summary="fg">
       <option name="closed" value="true" />
@@ -131,6 +136,11 @@
               </option>
               <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
             </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
           </value>
         </entry>
       </map>
